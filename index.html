@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nguyễn Quang Nam - Producer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <!-- Animated stars -->
+    <div class="stars" id="stars"></div>
+
+
+
+    <!-- Decorative floating elements -->
+    <div class="decorative" style="top: 15%; left: 10%;">✦</div>
+    <div class="decorative" style="top: 25%; right: 15%;">✦</div>
+    <div class="decorative" style="top: 60%; left: 8%;">✨</div>
+    <div class="decorative" style="top: 45%; right: 12%;">✨</div>
+    <div class="decorative" style="bottom: 30%; left: 20%;">✦</div>
+
+    <!-- Mountain silhouette -->
+    <div class="mountains"></div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Profile section -->
+        <div class="profile-section">
+                <div class="avatar">
+                <img id="avatarImage" src="avatar.jpeg" alt="Avatar" style="display: block;">
+            </div>
+            <div class="profile-info">
+                <div class="name-section">
+                    <h1 class="name">Nguyễn Quang Nam</h1>
+                    <div class="verified">✓</div>
+                </div>
+                <p class="title">Produer Lỏ</p>
+                <div class="social-links">
+<a class="social-link" href="https://facebook.com/quangnamzz" target="_blank">💬</a>
+<a class="social-link" href="https://t.me/quangnamzz" target="_blank">📞</a>
+<a class="social-link" href="https://hinamori458.github.io" target="_blank">💻</a>
+<a class="social-link" href="https://www.tiktok.com/@nguyenquangnam_zz" target="_blank">📱</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact information -->
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon email">📧</div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>Hinamori458@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon website">🌐</div>
+                <div class="contact-info">
+                    <h3>Website</h3>
+                    <p>nguyenquangnam.me</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon phone">📱</div>
+                <div class="contact-info">
+                    <h3>Số điện thoại</h3>
+                    <p>03xx.xxx.x56</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon location">📍</div>
+                <div class="contact-info">
+                    <h3>Địa chỉ</h3>
+                    <p>Phú Thọ, VietNam</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Content -->
+                    <div class="col-12">
+                        <div class="box box-content">
+                            <marquee><p class="tet"> Chào mừng các bạn đến với <font color="blue"> THÔNG TIN CÁ NHÂN </font> của <font color="green"> Nguyễn Quang Nam </font></p><font color="green">  </font><font color="green"> </font></marquee>
+
+        <!-- Payment section -->
+        <div class="payment-section">
+            <div class="payment-header">
+                <div class="coin-icon">🪙</div>
+                <span>THÔNG TIN THANH TOÁN</span>
+            </div>
+            <div class="underline"></div>
+            
+            <div class="payment-grid">
+                <!-- MBBank -->
+                <div class="payment-card">
+                    <div class="bank-icon mbbank">
+                        <img src="mbbank.png" alt="MBBank" style="width: 40px; height: 40px; object-fit: contain;">
+                    </div>
+                    <h3 class="bank-name">MBBank</h3>
+                    <p class="account-name">NGUYEN QUANG NAM</p>
+                    <p class="account-number">15121512151</p>
+                    <button class="copy-btn" onclick="copyToClipboard('15121512151')">COPY</button>
+                    <div class="decorative-flower">✦</div>
+                </div>
+
+                <!-- MoMo -->
+                <div class="payment-card">
+                    <div class="bank-icon momo">
+                        <img src="momo.png" alt="MoMo" style="width: 40px; height: 40px; object-fit: contain;">
+                    </div>
+                    <h3 class="bank-name">MoMo</h3>
+                    <p class="account-name">Nguyen Quang Nam</p>
+                    <p class="account-number">Nhấn vào nút bên dưới</p>
+                    <button class="copy-btn" onclick="copyToClipboard('0327309556')">COPY</button>
+                    <div class="decorative-flower small">✦</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!-- Music Player -->
+    <button class="music-btn" id="music-btn">
+        <i class="fas fa-play"></i>
+    </button>
+
+    <audio id="background-music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    
+
+    
+    
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 Vận Hành Bởi
+        <a href="https://www.facebook.com/quangnamzz">Nguyễn Quang Nam</a>
+    </footer>
+    
+    <!-- Bottom decorative image -->
+    <img src="https://i.imgur.com/SXCtWIU.gif" style="position:fixed;bottom:-3px;height: 80px;left:20px;z-index:9999">
+    <script src="js/main.js"></script>
+</body>
+</html>
