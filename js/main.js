@@ -139,4 +139,49 @@
                 musicIcon.classList.replace('fa-pause', 'fa-play');
             }
         });
-    
+    // Hàm copy số tài khoản
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Đã copy: " + text);
+    });
+}
+
+// Tạo mã QR bằng thư viện qrcode.js
+function generateQR(text) {
+    const modal = document.getElementById('qrModal');
+    modal.style.display = 'flex';
+
+    const canvas = document.getElementById('qrcode');
+    QRCode.toCanvas(canvas, text, function (error) {
+        if (error) console.error(error);
+    });
+}
+
+// Đóng modal QR
+function closeQR() {
+    document.getElementById('qrModal').style.display = 'none';
+}
+function showQR(imgPath) {
+    const modal = document.getElementById('qrModal');
+    modal.style.display = 'flex';
+
+    const qrBox = document.getElementById('qrBox');
+    qrBox.innerHTML = `<img src="${imgPath}" alt="QR Code" style="width:250px; border-radius:12px;">`;
+}
+
+function closeQR() {
+    document.getElementById('qrModal').style.display = 'none';
+}
+function showQR(imgPath) {
+    const modal = document.getElementById('qrModal');
+    const qrBox = document.getElementById('qrBox');
+    const downloadBtn = document.getElementById('downloadQR');
+
+    modal.style.display = 'flex';
+    qrBox.innerHTML = `<img src="${imgPath}" alt="QR Code">`;
+    downloadBtn.href = imgPath; // gán link tải về
+}
+
+function closeQR() {
+    document.getElementById('qrModal').style.display = 'none';
+}

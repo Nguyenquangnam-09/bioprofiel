@@ -39,7 +39,7 @@
                 </div>
                 <p class="title">Producer Lỏ</p>
                 <div class="social-links">
-<a class="social-link" href="https://facebook.com/quangnamzz" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a class="social-link" href="https://facebook.com/ngquangnamzz" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
 <a class="social-link" href="https://t.me/quangnamzz" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
 <a class="social-link" href="https://github.com/Nguyenquangnam-09" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
 <a class="social-link" href="https://www.tiktok.com/@nguyenquangnam_zz" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
@@ -95,31 +95,47 @@
             </div>
             <div class="underline"></div>
             
-            <div class="payment-grid">
-                <!-- MBBank -->
-                <div class="payment-card">
-                    <div class="bank-icon mbbank">
-                        <img src="mbbank.png" alt="MBBank" style="width: 40px; height: 40px; object-fit: contain;">
-                    </div>
-                    <h3 class="bank-name">MBBank</h3>
-                    <p class="account-name">NGUYEN QUANG NAM</p>
-                    <p class="account-number">15121512151</p>
-                    <button class="copy-btn" onclick="copyToClipboard('15121512151')">COPY</button>
-                    <div class="decorative-flower">✦</div>
-                </div>
+<div class="payment-grid">
+    <!-- MBBank -->
+    <div class="payment-card">
+        <div class="bank-icon mbbank">
+            <img src="mbbank.png" alt="MBBank" style="width: 40px; height: 40px; object-fit: contain;">
+        </div>
+        <h3 class="bank-name">MBBank</h3>
+        <p class="account-name">NGUYEN QUANG NAM</p>
+        <p class="account-number">15121512151</p>
+        <button class="copy-btn" onclick="copyToClipboard('15121512151')">COPY</button>
+        <button class="qr-btn" onclick="showQR('mb_qr.jpg')">QR</button>
+        <div class="decorative-flower">✦</div>
+    </div>
 
-                <!-- MoMo -->
-                <div class="payment-card">
-                    <div class="bank-icon momo">
-                        <img src="momo.png" alt="MoMo" style="width: 40px; height: 40px; object-fit: contain;">
-                    </div>
-                    <h3 class="bank-name">MoMo</h3>
-                    <p class="account-name">Nguyen Quang Nam</p>
-                    <p class="account-number">Nhấn vào nút bên dưới</p>
-                    <button class="copy-btn" onclick="copyToClipboard('0327309556')">COPY</button>
-                    <div class="decorative-flower small">✦</div>
-                </div>
-                </div>
+    <!-- MBBank 2 -->
+    <div class="payment-card">
+        <div class="bank-icon mbbank">
+            <img src="mbbank.png" alt="MBBank" style="width: 40px; height: 40px; object-fit: contain;">
+        </div>
+        <h3 class="bank-name">MBBank (6 số)</h3>
+        <p class="account-name">NGUYEN QUANG NAM</p>
+        <p class="account-number">12345678999</p>
+        <button class="copy-btn" onclick="copyToClipboard('246511')">COPY</button>
+        <button class="qr-btn" onclick="showQR('mb_qr2.jpg')">QR</button>
+        <div class="decorative-flower">✦</div>
+    </div>
+
+    <!-- MoMo -->
+    <div class="payment-card">
+        <div class="bank-icon momo">
+            <img src="momo.png" alt="MoMo" style="width: 40px; height: 40px; object-fit: contain;">
+        </div>
+        <h3 class="bank-name">MoMo</h3>
+        <p class="account-name">Nguyen Quang Nam</p>
+        <p class="account-number">0327309556</p>
+        <button class="copy-btn" onclick="copyToClipboard('0327309556')">COPY</button>
+        <button class="qr-btn" onclick="showQR('momo_qr.jpg')">QR</button>
+        <div class="decorative-flower small">✦</div>
+    </div>
+</div>
+
             </div>
         </div>
     </div>
@@ -142,11 +158,22 @@
     <!-- Footer -->
     <footer class="footer">
         © 2025 Vận Hành Bởi
-        <a href="https://www.facebook.com/quangnamzz">Nguyễn Quang Nam</a>
+        <a href="https://www.facebook.com/ngquangnamzz">Nguyễn Quang Nam</a>
     </footer>
     
     <!-- Bottom decorative image -->
     <img src="https://i.imgur.com/SXCtWIU.gif" style="position:fixed;bottom:-3px;height: 80px;left:20px;z-index:9999">
     <script src="js/main.js"></script>
 </body>
+<!-- QR Modal -->
+<div id="qrModal" class="qr-modal">
+    <div class="qr-modal-content">
+        <span class="close-btn" onclick="closeQR()">&times;</span>
+        <h3>Quét QR để thanh toán</h3>
+        <div id="qrBox"></div>
+        <a id="downloadQR" class="download-btn" download="qr-code.png">Tải QR về</a>
+    </div>
+</div>
+
+
 </html>
